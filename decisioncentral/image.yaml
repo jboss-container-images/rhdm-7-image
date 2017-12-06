@@ -1,0 +1,38 @@
+schema_version: 1
+
+name: "rhdm-7/rhdm70-decisioncentral"
+description: "Red Hat Decision Manager Central 7.0 container image"
+version: "7.0.0"
+from: "jboss-eap-7/eap71:latest"
+labels:
+    - name: "org.jboss.product"
+      value: "rhdm-decisioncentral"
+    - name: "org.jboss.product.version"
+      value: "7.0.0"
+    - name: "org.jboss.product.rhdm-decisioncentral.version"
+      value: "7.0.0"
+envs:
+    - name: "JBOSS_PRODUCT"
+      value: "rhdm-decisioncentral"
+    - name: "RHDM_DECISION_CENTRAL_VERSION"
+      value: "7.0.0"
+    - name: "PRODUCT_VERSION"
+      value: "7.0.0"
+    - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
+      value: "rhdm-7.0.0.DR1-decision-central-eap7.zip"
+modules:
+      repositories:
+          - path: modules
+      install:
+          - name: decisioncentral
+artifacts:
+    - path: rhdm-7.0.0.DR1-decision-central-eap7.zip
+      md5:  83c32fe16e92776818af0638ce5445f8
+run:
+      user: 185
+      cmd:
+          - "/opt/eap/bin/standalone.sh"
+          - "-b"
+          - "0.0.0.0"
+          - "-c"
+          - "standalone.xml"
