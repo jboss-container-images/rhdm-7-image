@@ -36,3 +36,7 @@ run:
           - "0.0.0.0"
           - "-c"
           - "standalone.xml"
+osbs:
+      repository:
+          name: rhdm-7-decisioncentral-docker
+          branch: jb-decisioncentral70
