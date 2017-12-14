@@ -36,3 +36,7 @@ run:
           - "0.0.0.0"
           - "-c"
           - "standalone-full.xml"
+osbs:
+      repository:
+          name: rhdm-7-kieserver-docker
+          branch: jb-kieserver70
