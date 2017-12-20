@@ -4,7 +4,7 @@ set -e
 
 SOURCES_DIR=/tmp/artifacts
 
-unzip ${SOURCES_DIR}/${DECISION_CENTRAL_DISTRIBUTION_ZIP} -d ${SOURCES_DIR}
+unzip -q ${SOURCES_DIR}/${DECISION_CENTRAL_DISTRIBUTION_ZIP} -d ${SOURCES_DIR}
 chmod 0755 ${SOURCES_DIR}/jboss-eap-7.1
 
 cp -rf ${SOURCES_DIR}/jboss-eap-7.1/* ${JBOSS_HOME}/
