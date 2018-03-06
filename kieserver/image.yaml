@@ -5,6 +5,8 @@ description: "Red Hat Decision Manager Execution Server 7.0 container image"
 version: "7.0.0"
 from: "jboss-eap-7/eap71:latest"
 labels:
+    - name: "com.redhat.component"
+      value: "rhdm-7-rhdm70-kieserver-container"
     - name: "org.jboss.product"
       value: "rhdm-kieserver"
     - name: "org.jboss.product.version"
@@ -38,5 +40,5 @@ run:
           - "standalone-full.xml"
 osbs:
       repository:
-          name: rhdm-7-kieserver-docker
+          name: containers/rhdm-7-kieserver
           branch: jb-rhdm-7.0-kieserver-rhel-7
