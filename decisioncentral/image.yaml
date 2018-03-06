@@ -5,6 +5,8 @@ description: "Red Hat Decision Manager Central 7.0 container image"
 version: "7.0.0"
 from: "jboss-eap-7/eap71:latest"
 labels:
+    - name: "com.redhat.component"
+      value: "rhdm-7-rhdm70-decisioncentral-container"
     - name: "org.jboss.product"
       value: "rhdm-decisioncentral"
     - name: "org.jboss.product.version"
@@ -38,5 +40,5 @@ run:
           - "standalone.xml"
 osbs:
       repository:
-          name: rhdm-7-decisioncentral-docker
+          name: containers/rhdm-7-decisioncentral
           branch: jb-rhdm-7.0-decisioncentral-rhel-7
