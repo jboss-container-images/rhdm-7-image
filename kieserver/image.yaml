@@ -39,4 +39,4 @@ run:
 osbs:
       repository:
           name: rhdm-7-kieserver-docker
-          branch: jb-kieserver70
+          branch: jb-rhdm-7.0-kieserver-rhel-7
