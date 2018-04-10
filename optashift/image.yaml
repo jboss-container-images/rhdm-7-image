@@ -1,0 +1,44 @@
+schema_version: 1
+
+name: "rhdm-7/rhdm70-optashift"
+description: "Red Hat Decision Manager Employee Rostering Business Optimizer 7.0 container image"
+version: "7.0.0"
+from: "jboss-eap-7/eap71:latest"
+labels:
+    - name: "com.redhat.component"
+      value: "rhdm-7-rhdm70-optashift-container"
+    - name: "org.jboss.product"
+      value: "rhdm-optashift"
+    - name: "org.jboss.product.version"
+      value: "7.0.0"
+    - name: "org.jboss.product.rhdm-optashift.version"
+      value: "7.0.0"
+envs:
+    - name: "JBOSS_PRODUCT"
+      value: "rhdm-optashift"
+    - name: "JBOSS_RHDM_OPTASHIFT_VERSION"
+      value: "7.0.0"
+    - name: "PRODUCT_VERSION"
+      value: "7.0.0"
+    - name: "OPTASHIFT_DISTRIBUTION_ZIP"
+      value: "optashift-employee-rostering-webapp.zip"
+modules:
+      repositories:
+          - path: modules
+      install:
+          - name: optashift
+artifacts:
+    - path: optashift-employee-rostering-webapp.zip
+      md5:  dd301f9e8acd5df80b3688f0bf790ab1
+run:
+      user: 185
+      cmd:
+          - "/opt/eap/bin/standalone.sh"
+          - "-b"
+          - "0.0.0.0"
+          - "-c"
+          - "standalone-full.xml"
+osbs:
+      repository:
+          name: containers/rhdm-7-optashift
+          branch: jb-rhdm-7.0-optashift-rhel-7
