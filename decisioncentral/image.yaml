@@ -2,34 +2,34 @@ schema_version: 1
 
 name: "rhdm-7/rhdm70-decisioncentral"
 description: "Red Hat Decision Manager Central 7.0 container image"
-version: "7.0.0"
-from: "jboss-eap-7/eap71:latest"
+version: "7.0.1"
+from: "jboss-eap-7/eap71:1.2"
 labels:
     - name: "com.redhat.component"
       value: "rhdm-7-rhdm70-decisioncentral-container"
     - name: "org.jboss.product"
       value: "rhdm-decisioncentral"
     - name: "org.jboss.product.version"
-      value: "7.0.0"
+      value: "7.0.1"
     - name: "org.jboss.product.rhdm-decisioncentral.version"
-      value: "7.0.0"
+      value: "7.0.1"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhdm-decisioncentral"
     - name: "RHDM_DECISION_CENTRAL_VERSION"
-      value: "7.0.0"
+      value: "7.0.1"
     - name: "PRODUCT_VERSION"
-      value: "7.0.0"
+      value: "7.0.1"
     - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
-      value: "rhdm-7.0.0.GA-decision-central-eap7-deployable.zip"
+      value: "rhdm-7.0.1.GA-decision-central-eap7-deployable.zip"
 modules:
       repositories:
           - path: modules
       install:
           - name: decisioncentral
 artifacts:
-    - path: rhdm-7.0.0.GA-decision-central-eap7-deployable.zip
-      md5:  ac487d47aab652588336c50c13bc8ad6
+    - path: rhdm-7.0.1.GA-decision-central-eap7-deployable.zip
+      md5:  1332eb8e0fbc6f343120471511d6fab1
 run:
       user: 185
       cmd:
