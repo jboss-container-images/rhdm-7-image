@@ -3,7 +3,7 @@ schema_version: 1
 name: "rhdm-7/rhdm70-decisioncentral"
 description: "Red Hat Decision Manager Central 7.0 container image"
 version: "7.0.1"
-from: "jboss-eap-7/eap71:1.2"
+from: "jboss-eap-7/eap71:latest"
 labels:
     - name: "com.redhat.component"
       value: "rhdm-7-rhdm70-decisioncentral-container"
