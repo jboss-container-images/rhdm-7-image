@@ -30,6 +30,8 @@ modules:
 artifacts:
     - path: rhdm-7.0.0.GA-decision-central-eap7-deployable.zip
       md5:  ac487d47aab652588336c50c13bc8ad6
+ports:
+    - value: 8001
 run:
       user: 185
       cmd:
