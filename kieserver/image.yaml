@@ -2,7 +2,7 @@ schema_version: 1
 
 name: "rhdm-7/rhdm70-kieserver"
 description: "Red Hat Decision Manager Execution Server 7.0 container image"
-version: "7.0.0"
+version: "7.0.1"
 from: "jboss-eap-7/eap71:latest"
 labels:
     - name: "com.redhat.component"
@@ -10,26 +10,26 @@ labels:
     - name: "org.jboss.product"
       value: "rhdm-kieserver"
     - name: "org.jboss.product.version"
-      value: "7.0.0"
+      value: "7.0.1"
     - name: "org.jboss.product.rhdm-kieserver.version"
-      value: "7.0.0"
+      value: "7.0.1"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhdm-kieserver"
     - name: "JBOSS_RHDM_KIESERVER_VERSION"
-      value: "7.0.0"
+      value: "7.0.1"
     - name: "PRODUCT_VERSION"
-      value: "7.0.0"
+      value: "7.0.1"
     - name: "KIE_SERVER_DISTRIBUTION_ZIP"
-      value: "rhdm-7.0.0.GA-kie-server-ee7.zip"
+      value: "rhdm-7.0.1.GA-kie-server-ee7.zip"
 modules:
       repositories:
           - path: modules
       install:
           - name: kieserver
 artifacts:
-    - path: rhdm-7.0.0.GA-kie-server-ee7.zip
-      md5:  a80ac328260106f964db11fe74957a99
+    - path: rhdm-7.0.1.GA-kie-server-ee7.zip
+      md5:  0712d9a59328446bf3ab0a68405a586f
 run:
       user: 185
       cmd:
