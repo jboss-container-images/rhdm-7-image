@@ -1,4 +1,4 @@
-@rhdm-7/rhdm70-kieserver
+@rhdm-7/rhdm71-kieserver
 Feature: RHDM Standalone Kie Execution Server tests
 
   Scenario: Test REST API is secure
