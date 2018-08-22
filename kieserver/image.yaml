@@ -21,15 +21,16 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.1.0"
     - name: "KIE_SERVER_DISTRIBUTION_ZIP"
-      value: "rhdm-7.0.1.GA-kie-server-ee7.zip"
+      value: "rhdm-7.1.0.DM-redhat-20180821-kie-server-ee7.zip"
 modules:
       repositories:
           - path: modules
       install:
           - name: kieserver
 artifacts:
-    - path: rhdm-7.0.1.GA-kie-server-ee7.zip
-      md5:  dc8be349441e92b7b496dbb8160b8dc2
+    - name: rhdm-7.1.0.DM-redhat-20180821-kie-server-ee7.zip
+      url: http://bxms-qe.rhev-ci-vms.eng.rdu2.redhat.com:8081/nexus/content/repositories/rhdm-7.1-nightly/org/kie/rhba/rhdm/7.1.0.DM-redhat-20180821/rhdm-7.1.0.DM-redhat-20180821-kie-server-ee7.zip
+      md5: 734c70198a6c7ec551135de5e7a4b635
 run:
       user: 185
       cmd:
