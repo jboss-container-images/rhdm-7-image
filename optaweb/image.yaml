@@ -1,0 +1,44 @@
+schema_version: 1
+
+name: "rhdm-7/rhdm71-optaweb-employee-rostering"
+description: "Red Hat Business Optimizer OptaWeb Employee Rostering 7.1 container image"
+version: "7.1.0"
+from: "jboss-eap-7/eap71:latest"
+labels:
+    - name: "com.redhat.component"
+      value: "rhdm-7-rhdm71-optaweb-employee-rostering-container"
+    - name: "org.jboss.product"
+      value: "rhdm-optaweb"
+    - name: "org.jboss.product.version"
+      value: "7.1.0"
+    - name: "org.jboss.product.rhdm-optaweb.version"
+      value: "7.1.0"
+envs:
+    - name: "JBOSS_PRODUCT"
+      value: "rhdm-optaweb"
+    - name: "JBOSS_RHDM_OPTAWEB_VERSION"
+      value: "7.1.0"
+    - name: "PRODUCT_VERSION"
+      value: "7.1.0"
+    - name: "OPTAWEB_DISTRIBUTION_ZIP"
+      value: "optaweb-employee-rostering.zip"
+modules:
+      repositories:
+          - path: modules
+      install:
+          - name: optaweb-employee-rostering
+artifacts:
+    - path: optaweb-employee-rostering.zip
+      md5:  062a1c64773f9ac90940314269eb92ec
+run:
+      user: 185
+      cmd:
+          - "/opt/eap/bin/standalone.sh"
+          - "-b"
+          - "0.0.0.0"
+          - "-c"
+          - "standalone-full.xml"
+osbs:
+      repository:
+          name: containers/rhdm-7-optaweb-employee-rostering
+          branch: jb-rhdm-7.1-optaweb-employee-rostering-rhel-7
