@@ -4,12 +4,7 @@ set -e
 
 SOURCES_DIR=/tmp/artifacts
 
-DISTRIBUTION_ZIP=${OPTAWEB_DISTRIBUTION_ZIP}
-DISTRIBUTION_WAR_DIR=optaweb-employee-rostering.war
-
-unzip -q ${SOURCES_DIR}/${DISTRIBUTION_ZIP} -d ${SOURCES_DIR}
-
-cp -rf ${SOURCES_DIR}/${DISTRIBUTION_WAR_DIR} ${JBOSS_HOME}/standalone/deployments/ROOT.war
+cp -rf ${SOURCES_DIR}/${OPTAWEB_DISTRIBUTION_WAR} ${JBOSS_HOME}/standalone/deployments/ROOT.war
 touch ${JBOSS_HOME}/standalone/deployments/ROOT.war.dodeploy
 
 

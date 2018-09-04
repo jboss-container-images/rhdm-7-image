@@ -20,16 +20,17 @@ envs:
       value: "7.1.0"
     - name: "PRODUCT_VERSION"
       value: "7.1.0"
-    - name: "OPTAWEB_DISTRIBUTION_ZIP"
-      value: "optaweb-employee-rostering.zip"
+    - name: "OPTAWEB_DISTRIBUTION_WAR"
+      value: "employee-rostering-webapp-7.11.0.redhat-20180904.war"
 modules:
       repositories:
           - path: modules
       install:
           - name: optaweb-employee-rostering
 artifacts:
-    - path: optaweb-employee-rostering.zip
-      md5:  062a1c64773f9ac90940314269eb92ec
+    - name: employee-rostering-webapp-7.11.0.redhat-20180904.war
+      url: http://bxms-qe.rhev-ci-vms.eng.rdu2.redhat.com:8081/nexus/content/repositories/rhdm-7.1-nightly/org/optaweb/employeerostering/employee-rostering-webapp/7.11.0.redhat-20180904/employee-rostering-webapp-7.11.0.redhat-20180904.war
+      md5: 36491290fedd4521b17dbfeb5754e3fc
 run:
       user: 185
       cmd:
