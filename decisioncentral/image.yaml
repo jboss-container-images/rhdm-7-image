@@ -21,16 +21,15 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.1.0"
     - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
-      value: "rhdm-7.1.0.DM-redhat-20180907-decision-central-eap7-deployable.zip"
+      value: "rhdm-7.1.0.GA-decision-central-eap7-deployable.zip"
 modules:
       repositories:
           - path: modules
       install:
           - name: decisioncentral
 artifacts:
-    - name: rhdm-7.1.0.DM-redhat-20180907-decision-central-eap7-deployable.zip
-      url: http://bxms-qe.rhev-ci-vms.eng.rdu2.redhat.com:8081/nexus/content/repositories/rhdm-7.1-nightly/org/kie/rhba/rhdm/7.1.0.DM-redhat-20180907/rhdm-7.1.0.DM-redhat-20180907-decision-central-eap7-deployable.zip
-      md5: 76b7ec858edc834a98e6a5c879c4d104
+    - path: rhdm-7.1.0.GA-decision-central-eap7-deployable.zip
+      md5: e357c7cbcb997f203369bb8382e0c003
 ports:
     - value: 8001
 run:
