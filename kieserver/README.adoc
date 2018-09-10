@@ -1,4 +1,4 @@
-# Red Hat Decision Manager Execution Server 7.1 container image
+# Red Hat Decision Manager KIE Server 7.1 container image
 
 NOTE: Extends link:https://github.com/jboss-container-images/jboss-eap-7-image[JBoss EAP 7 image]
 

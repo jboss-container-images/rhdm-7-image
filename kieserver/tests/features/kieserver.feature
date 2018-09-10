@@ -1,5 +1,5 @@
 @rhdm-7/rhdm71-kieserver
-Feature: RHDM Standalone Kie Execution Server tests
+Feature: RHDM Standalone Kie Server tests
 
   Scenario: Test REST API is secure
     When container is ready
