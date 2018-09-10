@@ -1,0 +1,46 @@
+schema_version: 1
+
+name: "rhdm-7/rhdm71-controller"
+description: "Red Hat Decision Manager Standalone Controller 7.1 container image"
+version: "7.1.0"
+from: "jboss-eap-7/eap71:7.1.4"
+labels:
+    - name: "com.redhat.component"
+      value: "rhdm-7-rhdm71-controller-container"
+    - name: "org.jboss.product"
+      value: "rhdm-controller"
+    - name: "org.jboss.product.version"
+      value: "7.1.0"
+    - name: "org.jboss.product.rhdm-controller.version"
+      value: "7.1.0"
+envs:
+    - name: "JBOSS_PRODUCT"
+      value: "rhdm-controller"
+    - name: "RHDM_CONTROLLER_VERSION"
+      value: "7.1.0"
+    - name: "PRODUCT_VERSION"
+      value: "7.1.0"
+    - name: "ADD_ONS_DISTRIBUTION_ZIP"
+      value: "rhdm-7.1.0.GA-add-ons.zip"
+    - name: "CONTROLLER_DISTRIBUTION_ZIP"
+      value: "rhdm-7.1-controller-ee7.zip"
+modules:
+      repositories:
+          - path: modules
+      install:
+          - name: controller
+artifacts:
+    - path: rhdm-7.1.0.GA-add-ons.zip
+      md5: cea8b0360079912f24cbffe188ddcf8f
+run:
+      user: 185
+      cmd:
+          - "/opt/eap/bin/standalone.sh"
+          - "-b"
+          - "0.0.0.0"
+          - "-c"
+          - "standalone-full.xml"
+osbs:
+      repository:
+          name: containers/rhdm-7-controller
+          branch: jb-rhdm-7.1-controller-rhel-7
