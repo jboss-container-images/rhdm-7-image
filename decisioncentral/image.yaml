@@ -21,15 +21,15 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.1.0"
     - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
-      value: "rhdm-7.1.0.GA-decision-central-eap7-deployable.zip"
+      value: "rhdm-7.1.0-decision-central-eap7-deployable.zip"
 modules:
       repositories:
           - path: modules
       install:
           - name: decisioncentral
 artifacts:
-    - path: rhdm-7.1.0.GA-decision-central-eap7-deployable.zip
-      md5: e357c7cbcb997f203369bb8382e0c003
+    - path: rhdm-7.1.0-decision-central-eap7-deployable.zip
+      md5: 0d8d0e08b79962af23052746a385054b
 ports:
     - value: 8001
 run:
