@@ -29,7 +29,7 @@ modules:
           - name: decisioncentral
 artifacts:
     - path: rhdm-7.1.0-decision-central-eap7-deployable.zip
-      md5: 0d8d0e08b79962af23052746a385054b
+      md5: 40636dc3f32c1b68a7d3ea6ef8c44d2e
 ports:
     - value: 8001
 run:
