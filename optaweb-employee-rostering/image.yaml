@@ -33,7 +33,7 @@ modules:
           - name: optaweb-employee-rostering
 artifacts:
     - path: rhdm-7.1.0-add-ons.zip
-      md5: fe27321d154bf3d7cb6e47c18fc2a3bd
+      md5: 1d968927d39c51deb0bd2c8115d642ca
 run:
       user: 185
       cmd:
