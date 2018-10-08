@@ -29,7 +29,7 @@ modules:
           - name: kieserver
 artifacts:
     - path: rhdm-7.1.0-kie-server-ee7.zip
-      md5: 3bef54373f06397044a8812c1c1c30d8
+      md5: 51db28ef90e07e3ba6acca380cbfbb37
 run:
       user: 185
       cmd:
