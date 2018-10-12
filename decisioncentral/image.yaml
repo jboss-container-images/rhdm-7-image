@@ -1,25 +1,25 @@
 schema_version: 1
 
-name: "rhdm-7/rhdm71-decisioncentral"
-description: "Red Hat Decision Manager Central 7.1 container image"
-version: "7.1.0"
+name: "rhdm-7/rhdm72-decisioncentral"
+description: "Red Hat Decision Manager Central 7.2 container image"
+version: "7.2.0"
 from: "jboss-eap-7/eap71:7.1.4"
 labels:
     - name: "com.redhat.component"
-      value: "rhdm-7-rhdm71-decisioncentral-container"
+      value: "rhdm-7-rhdm72-decisioncentral-container"
     - name: "org.jboss.product"
       value: "rhdm-decisioncentral"
     - name: "org.jboss.product.version"
-      value: "7.1.0"
+      value: "7.2.0"
     - name: "org.jboss.product.rhdm-decisioncentral.version"
-      value: "7.1.0"
+      value: "7.2.0"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhdm-decisioncentral"
     - name: "RHDM_DECISION_CENTRAL_VERSION"
-      value: "7.1.0"
+      value: "7.2.0"
     - name: "PRODUCT_VERSION"
-      value: "7.1.0"
+      value: "7.2.0"
     - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
       value: "rhdm-7.1.0-decision-central-eap7-deployable.zip"
 modules:
@@ -43,4 +43,4 @@ run:
 osbs:
       repository:
           name: containers/rhdm-7-decisioncentral
-          branch: jb-rhdm-7.1-decisioncentral-rhel-7
+          branch: jb-rhdm-7.2-decisioncentral-rhel-7
