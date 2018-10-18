@@ -3,7 +3,7 @@ schema_version: 1
 name: "rhdm-7/rhdm72-optaweb-employee-rostering"
 description: "Red Hat Business Optimizer OptaWeb Employee Rostering 7.2 container image"
 version: "7.2.0"
-from: "jboss-eap-7/eap71:7.1.4"
+from: "jboss-eap-7/eap-cd:14.0"
 labels:
     - name: "com.redhat.component"
       value: "rhdm-7-rhdm72-optaweb-employee-rostering-container"
