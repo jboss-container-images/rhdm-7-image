@@ -1,5 +1,38 @@
 schema_version: 1
 
-name: decisioncentral
+name: "rhdm-7-decisioncentral"
+description: "Red Hat Decision Manager Central 7.2 install"
+labels:
+    - name: "org.jboss.product"
+      value: "rhdm-decisioncentral"
+    - name: "org.jboss.product.version"
+      value: "7.2.0"
+    - name: "org.jboss.product.rhdm-decisioncentral.version"
+      value: "7.2.0"
+envs:
+    - name: "JBOSS_PRODUCT"
+      value: "rhdm-decisioncentral"
+    - name: "RHDM_DECISION_CENTRAL_VERSION"
+      value: "7.2.0"
+    - name: "PRODUCT_VERSION"
+      value: "7.2.0"
+    - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
+      value: "DECISION_CENTRAL_DISTRIBUTION.ZIP"
+    - name: "DECISION_CENTRAL_DISTRIBUTION_EAP"
+      value: "jboss-eap-7.2"
+ports:
+    - value: 8001
+artifacts:
+    - name: DECISION_CENTRAL_DISTRIBUTION.ZIP
+      path: rhdm-7.2.0.DM-redhat-20181111-decision-central-eap7-deployable.zip
+      md5: 6697cd80bf3edca21ecbdb0698849afa
+run:
+      user: 185
+      cmd:
+          - "/opt/eap/bin/standalone.sh"
+          - "-b"
+          - "0.0.0.0"
+          - "-c"
+          - "standalone.xml"
 execute:
     - script: install

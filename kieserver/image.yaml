@@ -3,42 +3,32 @@ schema_version: 1
 name: "rhdm-7/rhdm72-kieserver"
 description: "Red Hat Decision Manager KIE Server 7.2 container image"
 version: "7.2.0"
-from: "jboss-eap-7/eap71:7.1.4"
+from: "rhel7:7-released"
 labels:
     - name: "com.redhat.component"
       value: "rhdm-7-rhdm72-kieserver-container"
-    - name: "org.jboss.product"
-      value: "rhdm-kieserver"
-    - name: "org.jboss.product.version"
-      value: "7.2.0"
-    - name: "org.jboss.product.rhdm-kieserver.version"
-      value: "7.2.0"
-envs:
-    - name: "JBOSS_PRODUCT"
-      value: "rhdm-kieserver"
-    - name: "RHDM_KIESERVER_VERSION"
-      value: "7.2.0"
-    - name: "PRODUCT_VERSION"
-      value: "7.2.0"
-    - name: "KIE_SERVER_DISTRIBUTION_ZIP"
-      value: "rhdm-7.1.0-kie-server-ee7.zip"
 modules:
       repositories:
+          - name: cct_module
+            git:
+                  url: https://github.com/jboss-openshift/cct_module.git
+                  ref: master
+          - name: jboss-eap-7-image
+            git:
+                  url: https://github.com/jboss-container-images/jboss-eap-7-image.git
+                  ref: eap72-dev
           - path: modules
       install:
-          - name: kieserver
-artifacts:
-    - path: rhdm-7.1.0-kie-server-ee7.zip
-      md5: 51db28ef90e07e3ba6acca380cbfbb37
-run:
-      user: 185
-      cmd:
-          - "/opt/eap/bin/standalone.sh"
-          - "-b"
-          - "0.0.0.0"
-          - "-c"
-          - "standalone-full.xml"
+          - name: jboss.container.openjdk.jdk
+            version: "8"
+          - name: eap-7.2-latest
+          - name: rhdm-7-kieserver
+packages:
+      repositories:
+          - name: base
+            id: rhel-7-server-rpms
+          - jboss-os
 osbs:
       repository:
           name: containers/rhdm-7-kieserver
-          branch: jb-rhdm-7.2-kieserver-rhel-7
+          branch: jb-rhdm-7.2-kieserver-dev-rhel-7

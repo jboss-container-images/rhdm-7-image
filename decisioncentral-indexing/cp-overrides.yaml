@@ -1,0 +1,12 @@
+schema_version: 1
+
+modules:
+      repositories:
+          - name: cct_module
+            git:
+                  url: https://github.com/jboss-openshift/cct_module.git
+                  ref: sprint-26
+osbs:
+      repository:
+          name: containers/rhdm-7-decisioncentral-indexing
+          branch: jb-rhdm-7.2-decisioncentral-indexing-cp-rhel-7
