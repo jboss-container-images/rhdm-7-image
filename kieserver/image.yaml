@@ -21,15 +21,15 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.1.1"
     - name: "KIE_SERVER_DISTRIBUTION_ZIP"
-      value: "rhdm-7.1.0-kie-server-ee7.zip"
+      value: "rhdm-7.1.1-kie-server-ee7.zip"
 modules:
       repositories:
           - path: modules
       install:
           - name: kieserver
 artifacts:
-    - path: rhdm-7.1.0-kie-server-ee7.zip
-      md5: 51db28ef90e07e3ba6acca380cbfbb37
+    - path: rhdm-7.1.1-kie-server-ee7.zip
+      md5: 74c74c22cf84863600680819948d0992
 run:
       user: 185
       cmd:

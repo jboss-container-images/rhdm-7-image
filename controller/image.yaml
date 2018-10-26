@@ -21,7 +21,7 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.1.1"
     - name: "ADD_ONS_DISTRIBUTION_ZIP"
-      value: "rhdm-7.1.0-add-ons.zip"
+      value: "rhdm-7.1.1-add-ons.zip"
     - name: "CONTROLLER_DISTRIBUTION_ZIP"
       value: "rhdm-7.1-controller-ee7.zip"
 modules:
@@ -30,8 +30,8 @@ modules:
       install:
           - name: controller
 artifacts:
-    - path: rhdm-7.1.0-add-ons.zip
-      md5: 1d968927d39c51deb0bd2c8115d642ca
+    - path: rhdm-7.1.1-add-ons.zip
+      md5: 8a1c2a89382c395c0e17da1de0aaac8a
 run:
       user: 185
       cmd:

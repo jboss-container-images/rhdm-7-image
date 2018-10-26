@@ -21,19 +21,19 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.1.1"
     - name: "ADD_ONS_DISTRIBUTION_ZIP"
-      value: "rhdm-7.1.0-add-ons.zip"
+      value: "rhdm-7.1.1-add-ons.zip"
     - name: "EMPLOYEE_ROSTERING_DISTRIBUTION_ZIP"
       value: "rhdm-7.1-employee-rostering.zip"
     - name: "EMPLOYEE_ROSTERING_DISTRIBUTION_WAR"
-      value: "employee-rostering-distribution-7.11.0.Final-redhat-00003/binaries/employee-rostering-webapp-7.11.0.Final-redhat-00003.war"
+      value: "employee-rostering-distribution-7.11.0.Final-redhat-00004/binaries/employee-rostering-webapp-7.11.0.Final-redhat-00004.war"
 modules:
       repositories:
           - path: modules
       install:
           - name: optaweb-employee-rostering
 artifacts:
-    - path: rhdm-7.1.0-add-ons.zip
-      md5: 1d968927d39c51deb0bd2c8115d642ca
+    - path: rhdm-7.1.1-add-ons.zip
+      md5: 8a1c2a89382c395c0e17da1de0aaac8a
 run:
       user: 185
       cmd:
