@@ -1,0 +1,17 @@
+builds:
+  # Product builds
+  - name: "rhdm-controller"
+    descriptor: "controller/image.yaml"
+    product: true
+  - name: "rhdm-decisioncentral"
+    descriptor: "decisioncentral/image.yaml"
+    product: true
+  - name: "rhdm-decisioncentral-indexing"
+    descriptor: "decisioncentral-indexing/image.yaml"
+    product: true
+  - name: "rhdm-kieserver"
+    descriptor: "kieserver/image.yaml"
+    product: true
+  - name: "rhdm-optaweb-employee-rostering"
+    descriptor: "optaweb-employee-rostering/image.yaml"
+    product: true
