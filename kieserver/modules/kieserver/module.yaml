@@ -1,5 +1,34 @@
 schema_version: 1
 
-name: kieserver
+name: "rhdm-7-kieserver"
+description: "Red Hat Decision Manager KIE Server 7.2 install"
+labels:
+    - name: "org.jboss.product"
+      value: "rhdm-kieserver"
+    - name: "org.jboss.product.version"
+      value: "7.2.0"
+    - name: "org.jboss.product.rhdm-kieserver.version"
+      value: "7.2.0"
+envs:
+    - name: "JBOSS_PRODUCT"
+      value: "rhdm-kieserver"
+    - name: "RHDM_KIESERVER_VERSION"
+      value: "7.2.0"
+    - name: "PRODUCT_VERSION"
+      value: "7.2.0"
+    - name: "KIE_SERVER_DISTRIBUTION_ZIP"
+      value: "KIE_SERVER_DISTRIBUTION.ZIP"
+artifacts:
+    - name: KIE_SERVER_DISTRIBUTION.ZIP
+      path: rhdm-7.2.0.DM-redhat-20181111-kie-server-ee7.zip
+      md5: 699eb84a37cd1c8e14c20372a4ffa3b4
+run:
+      user: 185
+      cmd:
+          - "/opt/eap/bin/standalone.sh"
+          - "-b"
+          - "0.0.0.0"
+          - "-c"
+          - "standalone-full.xml"
 execute:
     - script: install
