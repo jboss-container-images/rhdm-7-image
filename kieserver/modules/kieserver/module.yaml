@@ -20,8 +20,8 @@ envs:
       value: "KIE_SERVER_DISTRIBUTION.ZIP"
 artifacts:
     - name: KIE_SERVER_DISTRIBUTION.ZIP
-      path: rhdm-7.2.0.DM-redhat-20181114-kie-server-ee7.zip
-      md5: f86e0f1c9122f9cf98c0d5b1c792b655
+      path: rhdm-7.2.0-kie-server-ee7.zip
+      md5: 0cccdba3433cf13bab1caea491789962
 run:
       user: 185
       cmd:
