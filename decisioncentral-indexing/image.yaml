@@ -29,4 +29,4 @@ packages:
 osbs:
       repository:
           name: containers/rhdm-7-decisioncentral-indexing
-          branch: jb-rhdm-7.2-decisioncentral-indexing-dev-rhel-7
+          branch: rhdm-7.2-rhel-7
