@@ -32,4 +32,4 @@ packages:
 osbs:
       repository:
           name: containers/rhdm-7-kieserver
-          branch: jb-rhdm-7.2-kieserver-dev-rhel-7
+          branch: rhdm-7.2-rhel-7
