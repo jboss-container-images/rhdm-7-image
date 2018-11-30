@@ -22,6 +22,9 @@ artifacts:
     - name: KIE_SERVER_DISTRIBUTION.ZIP
       path: rhdm-7.2.0-kie-server-ee7.zip
       md5: 719ef9520ecc8f292e9bdd9340b7d5b9
+    - name: slf4j-simple.jar
+      path: slf4j-simple-1.7.22.redhat-1.jar
+      md5: 51c319582c16a07c21e41737e45cb03a
 run:
       user: 185
       cmd:
