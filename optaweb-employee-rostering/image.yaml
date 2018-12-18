@@ -1,12 +1,12 @@
 schema_version: 1
 
-name: "rhdm-7/rhdm72-optaweb-employee-rostering"
-description: "Red Hat Business Optimizer OptaWeb Employee Rostering 7.2 container image"
-version: "7.2.0"
+name: "rhdm-7/rhdm73-optaweb-employee-rostering"
+description: "Red Hat Business Optimizer OptaWeb Employee Rostering 7.3 container image"
+version: "7.3.0"
 from: "rhel7:7-released"
 labels:
     - name: "com.redhat.component"
-      value: "rhdm-7-rhdm72-optaweb-employee-rostering-container"
+      value: "rhdm-7-rhdm73-optaweb-employee-rostering-container"
 modules:
       repositories:
           - name: cct_module
@@ -30,4 +30,4 @@ osbs:
           container_file: container.yaml
       repository:
           name: containers/rhdm-7-optaweb-employee-rostering
-          branch: rhdm-7.2-rhel-7
+          branch: rhdm-7.3-rhel-7
