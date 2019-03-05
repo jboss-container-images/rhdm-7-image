@@ -1,5 +1,5 @@
-@rhdm-7/rhdm73-optaweb-employee-rostering
-Feature: Red Hat Business Optimizer OptaWeb Employee Rostering 7.3 tests
+@rhdm-7/rhdm74-optaweb-employee-rostering
+Feature: Red Hat Business Optimizer OptaWeb Employee Rostering 7.4 tests
 
   Scenario: Web console is available
     When container is ready
@@ -9,4 +9,3 @@ Feature: Red Hat Business Optimizer OptaWeb Employee Rostering 7.3 tests
          | path     | /gwtui/gwtui.html |
          | expected_status_code | 200 |
          | wait     | 180   |
-

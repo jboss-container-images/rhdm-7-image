@@ -1,4 +1,4 @@
-# Red Hat Decision Central Indexing 7.3 container image
+# Red Hat Decision Central Indexing 7.4 container image
 
 NOTE: Extends link:https://github.com/jboss-container-images/jboss-openjdk-image[JBoss OpenJDK image]
 
