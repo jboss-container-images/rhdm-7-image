@@ -1,4 +1,4 @@
-@rhdm-7/rhdm73-decisioncentral
+@rhdm-7/rhdm74-decisioncentral
 Feature: Standalone Decision Central tests
 
   Scenario: Web console is available
@@ -9,4 +9,3 @@ Feature: Standalone Decision Central tests
          | path     | /kie-drools-wb.jsp |
          | expected_status_code | 200 |
          | wait     | 120   |
-
