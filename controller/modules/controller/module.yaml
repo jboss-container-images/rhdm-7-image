@@ -22,8 +22,8 @@ envs:
       value: "rhdm-7.3-controller-ee7.zip"
 artifacts:
     - name: ADD_ONS_DISTRIBUTION.ZIP
-      path: rhdm-7.3.0.DM-redhat-20190305-add-ons.zip
-      md5: a1251e00aae45b10377c28842647d0ee
+      path: rhdm-7.3.0-add-ons.zip
+      md5: 563ffc60354a5978ee5c14ece5c3c742
 run:
       user: 185
       cmd:
