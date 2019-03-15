@@ -1,27 +1,27 @@
 builds:
   # Product builds
-  - name: "rhdm-controller-dev"
+  - name: "rhdm-controller"
     descriptor: "controller/image.yaml"
     product: true
     overrides:
-      - "controller/dev-overrides.yaml"
-  - name: "rhdm-decisioncentral-dev"
+      - "controller/branch-overrides.yaml"
+  - name: "rhdm-decisioncentral"
     descriptor: "decisioncentral/image.yaml"
     product: true
     overrides:
-      - "decisioncentral/dev-overrides.yaml"
-  - name: "rhdm-decisioncentral-indexing-dev"
+      - "decisioncentral/branch-overrides.yaml"
+  - name: "rhdm-decisioncentral-indexing"
     descriptor: "decisioncentral-indexing/image.yaml"
     product: true
     overrides:
-      - "decisioncentral-indexing/dev-overrides.yaml"
-  - name: "rhdm-kieserver-dev"
+      - "decisioncentral-indexing/branch-overrides.yaml"
+  - name: "rhdm-kieserver"
     descriptor: "kieserver/image.yaml"
     product: true
     overrides:
-      - "kieserver/dev-overrides.yaml"
-  - name: "rhdm-optaweb-employee-rostering-dev"
+      - "kieserver/branch-overrides.yaml"
+  - name: "rhdm-optaweb-employee-rostering"
     descriptor: "optaweb-employee-rostering/image.yaml"
     product: true
     overrides:
-      - "optaweb-employee-rostering/dev-overrides.yaml"
+      - "optaweb-employee-rostering/branch-overrides.yaml"
