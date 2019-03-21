@@ -17,15 +17,16 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.4.0"
     - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
-      value: "DECISION_CENTRAL_DISTRIBUTION.ZIP"
+      value: "decision_central_distribution.zip"
     - name: "DECISION_CENTRAL_DISTRIBUTION_EAP"
       value: "jboss-eap-7.2"
 ports:
     - value: 8001
 artifacts:
-    - name: DECISION_CENTRAL_DISTRIBUTION.ZIP
-      path: rhdm-7.4.0.DM-redhat-20190312-decision-central-eap7-deployable.zip
-      md5: 29e590113bf13f9c7c690473b523e444
+    - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
+      target: "decision_central_distribution.zip"
+      #     rhdm-7.4.0.DM-redhat-20190312-decision-central-eap7-deployable.zip
+      md5: "29e590113bf13f9c7c690473b523e444"
 run:
       user: 185
       cmd:
