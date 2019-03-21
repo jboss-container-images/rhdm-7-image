@@ -17,14 +17,16 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.4.0"
     - name: "KIE_SERVER_DISTRIBUTION_ZIP"
-      value: "KIE_SERVER_DISTRIBUTION.ZIP"
+      value: "kie_server_distribution.zip"
 artifacts:
-    - name: KIE_SERVER_DISTRIBUTION.ZIP
-      path: rhdm-7.4.0.DM-redhat-20190312-kie-server-ee8.zip
-      md5: 586c9640e5064ca1697612eefbefff69
-    - name: slf4j-simple.jar
-      path: slf4j-simple-1.7.22.redhat-1.jar
-      md5: 51c319582c16a07c21e41737e45cb03a
+    - name: "KIE_SERVER_DISTRIBUTION_ZIP"
+      target: "kie_server_distribution.zip"
+      #     rhdm-7.4.0.DM-redhat-20190312-kie-server-ee8.zip
+      md5: "586c9640e5064ca1697612eefbefff69"
+    - name: "slf4j-simple.jar"
+      target: "slf4j-simple.jar"
+      #     slf4j-simple-1.7.22.redhat-1.jar
+      md5: "51c319582c16a07c21e41737e45cb03a"
 run:
       user: 185
       cmd:
