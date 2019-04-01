@@ -6,25 +6,27 @@ labels:
     - name: "org.jboss.product"
       value: "rhdm-kieserver"
     - name: "org.jboss.product.version"
-      value: "7.3.0"
+      value: "7.3.1"
     - name: "org.jboss.product.rhdm-kieserver.version"
-      value: "7.3.0"
+      value: "7.3.1"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhdm-kieserver"
     - name: "RHDM_KIESERVER_VERSION"
-      value: "7.3.0"
+      value: "7.3.1"
     - name: "PRODUCT_VERSION"
-      value: "7.3.0"
+      value: "7.3.1"
     - name: "KIE_SERVER_DISTRIBUTION_ZIP"
-      value: "KIE_SERVER_DISTRIBUTION.ZIP"
+      value: "kie_server_distribution.zip"
 artifacts:
-    - name: KIE_SERVER_DISTRIBUTION.ZIP
-      path: rhdm-7.3.0-kie-server-ee8.zip
-      md5: fcdc44b4af44dd0926f5c31629063bfb
-    - name: slf4j-simple.jar
-      path: slf4j-simple-1.7.22.redhat-1.jar
-      md5: 51c319582c16a07c21e41737e45cb03a
+    - name: "KIE_SERVER_DISTRIBUTION_ZIP"
+      target: "kie_server_distribution.zip"
+      #     rhdm-7.3.0.DM-redhat-20190331-kie-server-ee8.zip
+      md5: "028c28d7a2958ed3c69e650e9c278761"
+    - name: "slf4j-simple.jar"
+      target: "slf4j-simple.jar"
+      #     slf4j-simple-1.7.22.redhat-1.jar
+      md5: "51c319582c16a07c21e41737e45cb03a"
 run:
       user: 185
       cmd:
