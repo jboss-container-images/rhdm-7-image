@@ -24,7 +24,7 @@ artifacts:
     - name: "ADD_ONS_DISTRIBUTION_ZIP"
       target: "add_ons_distribution.zip"
       #     rhdm-7.3.1-add-ons.zip
-      md5: "8171020be3d0d4eed27dafc6938a8555"
+      md5: "2953b32eefe12419ca93ba131d5e7f44"
 run:
       user: 185
       cmd:
