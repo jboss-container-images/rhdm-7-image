@@ -21,13 +21,13 @@ envs:
     - name: "EMPLOYEE_ROSTERING_DISTRIBUTION_ZIP"
       value: "rhdm-7.3-employee-rostering.zip"
     - name: "EMPLOYEE_ROSTERING_DISTRIBUTION_WAR"
-      value: "employee-rostering-distribution-7.18.0.Final-redhat-00003/binaries/employee-rostering-webapp-7.18.0.Final-redhat-00003.war"
+      value: "employee-rostering-distribution-7.18.0.Final-redhat-00004/binaries/employee-rostering-webapp-7.18.0.Final-redhat-00004.war"
 # remember to also update "EMPLOYEE_ROSTERING_DISTRIBUTION_WAR" value
 artifacts:
     - name: "ADD_ONS_DISTRIBUTION_ZIP"
       target: "add_ons_distribution.zip"
       #     rhdm-7.3.1-add-ons.zip
-      md5: "2953b32eefe12419ca93ba131d5e7f44"
+      md5: "14609764e970bbd85088f2ef70bb1b30"
 run:
       user: 185
       cmd:
