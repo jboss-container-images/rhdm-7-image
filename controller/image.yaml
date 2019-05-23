@@ -31,4 +31,4 @@ osbs:
           container_file: container.yaml
       repository:
           name: containers/rhdm-7-controller
-          branch: rhdm-7.4-ubi-8
+          branch: rhdm-7.4-rhel-8
