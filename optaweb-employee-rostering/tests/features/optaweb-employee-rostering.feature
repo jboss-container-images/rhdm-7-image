@@ -1,5 +1,5 @@
-@rhdm-7/rhdm74-optaweb-employee-rostering
-Feature: Red Hat Business Optimizer OptaWeb Employee Rostering 7.4 tests
+@rhdm-7/rhdm75-optaweb-employee-rostering
+Feature: Red Hat Business Optimizer OptaWeb Employee Rostering 7.5 tests
 
   Scenario: Web console is available
     When container is ready
