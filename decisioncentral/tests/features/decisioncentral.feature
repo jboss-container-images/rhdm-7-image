@@ -1,4 +1,4 @@
-@rhdm-7/rhdm74-decisioncentral
+@rhdm-7/rhdm75-decisioncentral
 Feature: Standalone Decision Central tests
 
   Scenario: Web console is available
