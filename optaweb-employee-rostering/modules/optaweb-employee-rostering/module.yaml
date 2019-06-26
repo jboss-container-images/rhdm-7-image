@@ -1,40 +1,39 @@
+---
 schema_version: 1
-
 name: "rhdm-7-optaweb-employee-rostering"
 description: "Red Hat Business Optimizer OptaWeb Employee Rostering 7.5 install"
 labels:
-    - name: "org.jboss.product"
-      value: "rhdm-optaweb-employee-rostering"
-    - name: "org.jboss.product.version"
-      value: "7.5.0"
-    - name: "org.jboss.product.rhdm-optaweb-employee-rostering.version"
-      value: "7.5.0"
+- name: "org.jboss.product"
+  value: "rhdm-optaweb-employee-rostering"
+- name: "org.jboss.product.version"
+  value: "7.5.0"
+- name: "org.jboss.product.rhdm-optaweb-employee-rostering.version"
+  value: "7.5.0"
 envs:
-    - name: "JBOSS_PRODUCT"
-      value: "rhdm-optaweb-employee-rostering"
-    - name: "JBOSS_RHDM_OPTAWEB_EMPLOYEE_ROSTERING_VERSION"
-      value: "7.5.0"
-    - name: "PRODUCT_VERSION"
-      value: "7.5.0"
-    - name: "ADD_ONS_DISTRIBUTION_ZIP"
-      value: "add_ons_distribution.zip"
-    - name: "EMPLOYEE_ROSTERING_DISTRIBUTION_ZIP"
-      value: "rhdm-7.5-employee-rostering.zip"
-    - name: "EMPLOYEE_ROSTERING_DISTRIBUTION_WAR"
-      value: "employee-rostering-distribution-7.5.0.redhat-20190618/binaries/employee-rostering-webapp-7.5.0.redhat-20190618.war"
-# remember to also update "EMPLOYEE_ROSTERING_DISTRIBUTION_WAR" value
+- name: "JBOSS_PRODUCT"
+  value: "rhdm-optaweb-employee-rostering"
+- name: "JBOSS_RHDM_OPTAWEB_EMPLOYEE_ROSTERING_VERSION"
+  value: "7.5.0"
+- name: "PRODUCT_VERSION"
+  value: "7.5.0"
+- name: "ADD_ONS_DISTRIBUTION_ZIP"
+  value: "add_ons_distribution.zip"
+- name: "EMPLOYEE_ROSTERING_DISTRIBUTION_ZIP"
+  value: "rhdm-7.5-employee-rostering.zip"
+- name: "EMPLOYEE_ROSTERING_DISTRIBUTION_WAR"
+  value: "employee-rostering-distribution-7.5.0.redhat-20190627/binaries/employee-rostering-webapp-7.5.0.redhat-20190627.war"
 artifacts:
-    - name: "ADD_ONS_DISTRIBUTION_ZIP"
-      target: "add_ons_distribution.zip"
-      #     rhdm-7.5.0.DM-redhat-20190618-add-ons.zip
-      md5: "41992539f682865d2ab1354e7af8d01e"
+- name: "ADD_ONS_DISTRIBUTION_ZIP"
+  target: "add_ons_distribution.zip"
+  # rhdm-7.5.0.DM-redhat-20190627-add-ons.zip
+  md5: "ab1"
 run:
-      user: 185
-      cmd:
-          - "/opt/eap/bin/standalone.sh"
-          - "-b"
-          - "0.0.0.0"
-          - "-c"
-          - "standalone-full.xml"
+  user: 185
+  cmd:
+  - "/opt/eap/bin/standalone.sh"
+  - "-b"
+  - "0.0.0.0"
+  - "-c"
+  - "standalone-full.xml"
 execute:
-    - script: install
+- script: "install"
