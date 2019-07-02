@@ -1,37 +1,37 @@
+---
 schema_version: 1
-
 name: "rhdm-7-controller"
 description: "Red Hat Decision Manager Standalone Controller 7.4 install"
 labels:
-    - name: "org.jboss.product"
-      value: "rhdm-controller"
-    - name: "org.jboss.product.version"
-      value: "7.4.0"
-    - name: "org.jboss.product.rhdm-controller.version"
-      value: "7.4.0"
+- name: "org.jboss.product"
+  value: "rhdm-controller"
+- name: "org.jboss.product.version"
+  value: "7.4.0"
+- name: "org.jboss.product.rhdm-controller.version"
+  value: "7.4.0"
 envs:
-    - name: "JBOSS_PRODUCT"
-      value: "rhdm-controller"
-    - name: "RHDM_CONTROLLER_VERSION"
-      value: "7.4.0"
-    - name: "PRODUCT_VERSION"
-      value: "7.4.0"
-    - name: "ADD_ONS_DISTRIBUTION_ZIP"
-      value: "add_ons_distribution.zip"
-    - name: "CONTROLLER_DISTRIBUTION_ZIP"
-      value: "rhdm-7.4-controller-ee7.zip"
+- name: "JBOSS_PRODUCT"
+  value: "rhdm-controller"
+- name: "RHDM_CONTROLLER_VERSION"
+  value: "7.4.0"
+- name: "PRODUCT_VERSION"
+  value: "7.4.0"
+- name: "ADD_ONS_DISTRIBUTION_ZIP"
+  value: "add_ons_distribution.zip"
+- name: "CONTROLLER_DISTRIBUTION_ZIP"
+  value: "rhdm-7.4-controller-ee7.zip"
 artifacts:
-    - name: "ADD_ONS_DISTRIBUTION_ZIP"
-      target: "add_ons_distribution.zip"
-      #     rhdm-7.4.0-add-ons.zip
-      md5: "beddcb89cfde509b157af709526d5333"
+- name: "ADD_ONS_DISTRIBUTION_ZIP"
+  target: "add_ons_distribution.zip"
+  # rhdm-7.4.0.DM-redhat-20190701-add-ons.zip
+  md5: "4209f034c914caaba5c56a3e2b1e10ff"
 run:
-      user: 185
-      cmd:
-          - "/opt/eap/bin/standalone.sh"
-          - "-b"
-          - "0.0.0.0"
-          - "-c"
-          - "standalone-full.xml"
+  user: 185
+  cmd:
+  - "/opt/eap/bin/standalone.sh"
+  - "-b"
+  - "0.0.0.0"
+  - "-c"
+  - "standalone-full.xml"
 execute:
-    - script: install
+- script: "install"
