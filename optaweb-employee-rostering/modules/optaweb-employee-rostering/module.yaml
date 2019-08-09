@@ -1,6 +1,7 @@
 ---
 schema_version: 1
 name: "rhdm-7-optaweb-employee-rostering"
+version: "1.0"
 description: "Red Hat Business Optimizer OptaWeb Employee Rostering 7.5 install"
 labels:
 - name: "org.jboss.product"
