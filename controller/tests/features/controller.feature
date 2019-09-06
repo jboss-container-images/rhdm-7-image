@@ -1,4 +1,4 @@
-@rhdm-7/rhdm75-controller
+@rhdm-7/rhdm76-controller
 Feature: RHDM Standalone Controller tests
 
   Scenario: Test REST API is secure
