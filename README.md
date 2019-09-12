@@ -38,7 +38,7 @@ ports:
     - value: 8001
 artifacts:
     - name: DECISION_CENTRAL_DISTRIBUTION.ZIP
-      path: rhdm-7.5.0.DM-redhat-20190312-decision-central-eap7-deployable.zip
+      path: rhdm-7.6.0.DM-redhat-20190312-decision-central-eap7-deployable.zip
       md5: 29e590113bf13f9c7c690473b523e444
 run:
       user: 185
