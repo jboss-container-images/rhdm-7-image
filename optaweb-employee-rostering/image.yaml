@@ -6,7 +6,7 @@ version: "7.4.0"
 from: "ubi8:8-released"
 labels:
     - name: "com.redhat.component"
-      value: "rhdm-7-rhdm76-optaweb-employee-rostering-rhel8-container"
+      value: "rhdm-7-rhdm76-optaweb-employee-rostering-container"
 modules:
       repositories:
           - name: cct_module
