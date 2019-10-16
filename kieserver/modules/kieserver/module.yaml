@@ -22,8 +22,8 @@ envs:
 artifacts:
 - name: "KIE_SERVER_DISTRIBUTION_ZIP"
   target: "kie_server_distribution.zip"
-  # rhdm-7.6.0.DM-redhat-20190930-kie-server-ee8.zip
-  md5: "065874c6b454eebf002f40fca22c7a2b"
+  # rhdm-7.6.0.DM-redhat-20191003-kie-server-ee8.zip
+  md5: "2cff38900f83d0036395dfb1b7a7b6af"
 - name: "slf4j-simple.jar"
   target: "slf4j-simple.jar"
   # slf4j-simple-1.7.22.redhat-2.jar
