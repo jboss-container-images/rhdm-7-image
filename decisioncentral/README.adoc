@@ -1,6 +1,4 @@
-# Red Hat Decision Manager Central 7.5 container image
-
-NOTE: Extends link:https://github.com/jboss-container-images/jboss-eap-7-image[JBoss EAP 7 image]
+# Red Hat Decision Manager Central 7 module
 
 # License
 
