@@ -20,12 +20,12 @@ envs:
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   value: "add_ons_distribution.zip"
 - name: "CONTROLLER_DISTRIBUTION_ZIP"
-  value: "rhdm-7.5-controller-ee7.zip"
+  value: "rhdm-7.5.0-controller-ee7.zip"
 artifacts:
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   target: "add_ons_distribution.zip"
   # rhdm-7.5.0-add-ons.zip
-  md5: "39ab88f193985014d31d728a50467c66"
+  md5: "d977ec05b2318548441505081fcb3314"
 run:
   user: 185
   cmd:

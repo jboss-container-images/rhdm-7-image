@@ -20,15 +20,15 @@ envs:
 - name: "REFERENCE_IMPLEMENTATION_DISTRIBUTION_ZIP"
   value: "reference_implementation_distribution.zip"
 - name: "EMPLOYEE_ROSTERING_DISTRIBUTION_ZIP"
-  value: "rhdm-7.5-employee-rostering.zip"
+  value: "rhdm-7.5.0-employee-rostering.zip"
 - name: "EMPLOYEE_ROSTERING_DISTRIBUTION_WAR"
-  value: "employee-rostering-distribution-7.26.0.Final-redhat-00004/binaries/employee-rostering-webapp-7.26.0.Final-redhat-00004.war"
+  value: "employee-rostering-distribution-7.26.0.Final-redhat-00005/binaries/employee-rostering-webapp-7.26.0.Final-redhat-00005.war"
 # remember to also update "EMPLOYEE_ROSTERING_DISTRIBUTION_WAR" value
 artifacts:
 - name: "REFERENCE_IMPLEMENTATION_DISTRIBUTION_ZIP"
   target: "reference_implementation_distribution.zip"
   # rhdm-7.5.0-reference-implementation.zip
-  md5: "a8eb9c6088e4d2ebefb6c89b3fa12eed"
+  md5: "15fa489d8afcf3e9f84fa559c64f2c25"
 run:
   user: 185
   cmd:
