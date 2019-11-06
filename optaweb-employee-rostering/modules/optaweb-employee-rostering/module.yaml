@@ -7,28 +7,28 @@ labels:
 - name: "org.jboss.product"
   value: "rhdm-optaweb-employee-rostering"
 - name: "org.jboss.product.version"
-  value: "7.5.0"
+  value: "7.5.1"
 - name: "org.jboss.product.rhdm-optaweb-employee-rostering.version"
-  value: "7.5.0"
+  value: "7.5.1"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhdm-optaweb-employee-rostering"
 - name: "JBOSS_RHDM_OPTAWEB_EMPLOYEE_ROSTERING_VERSION"
-  value: "7.5.0"
+  value: "7.5.1"
 - name: "PRODUCT_VERSION"
-  value: "7.5.0"
+  value: "7.5.1"
 - name: "REFERENCE_IMPLEMENTATION_DISTRIBUTION_ZIP"
   value: "reference_implementation_distribution.zip"
 - name: "EMPLOYEE_ROSTERING_DISTRIBUTION_ZIP"
-  value: "rhdm-7.5.0-employee-rostering.zip"
+  value: "rhdm-7.5.1-employee-rostering.zip"
 - name: "EMPLOYEE_ROSTERING_DISTRIBUTION_WAR"
-  value: "employee-rostering-distribution-7.26.0.Final-redhat-00005/binaries/employee-rostering-webapp-7.26.0.Final-redhat-00005.war"
+  value: "employee-rostering-distribution-7.26.0.Final-redhat-00006/binaries/employee-rostering-webapp-7.26.0.Final-redhat-00006.war"
 # remember to also update "EMPLOYEE_ROSTERING_DISTRIBUTION_WAR" value
 artifacts:
 - name: "REFERENCE_IMPLEMENTATION_DISTRIBUTION_ZIP"
   target: "reference_implementation_distribution.zip"
-  # rhdm-7.5.0-reference-implementation.zip
-  md5: "15fa489d8afcf3e9f84fa559c64f2c25"
+  # rhdm-7.5.1-reference-implementation.zip
+  md5: "29e34df22005d06a5dfb5e011106db3e"
 run:
   user: 185
   cmd:

@@ -7,16 +7,16 @@ labels:
 - name: "org.jboss.product"
   value: "rhdm-decisioncentral"
 - name: "org.jboss.product.version"
-  value: "7.5.0"
+  value: "7.5.1"
 - name: "org.jboss.product.rhdm-decisioncentral.version"
-  value: "7.5.0"
+  value: "7.5.1"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhdm-decisioncentral"
 - name: "RHDM_DECISION_CENTRAL_VERSION"
-  value: "7.5.0"
+  value: "7.5.1"
 - name: "PRODUCT_VERSION"
-  value: "7.5.0"
+  value: "7.5.1"
 - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
   value: "decision_central_distribution.zip"
 - name: "DECISION_CENTRAL_DISTRIBUTION_EAP"
@@ -26,8 +26,8 @@ ports:
 artifacts:
 - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
   target: "decision_central_distribution.zip"
-  # rhdm-7.5.0-decision-central-eap7-deployable.zip
-  md5: "912cc9853c0f6a8f2c81c06c47cd98d7"
+  # rhdm-7.5.1-decision-central-eap7-deployable.zip
+  md5: "d3d46a38ef10006fa6f817c8ca11628b"
 run:
   user: 185
   cmd:
