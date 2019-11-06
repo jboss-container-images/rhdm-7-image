@@ -7,25 +7,25 @@ labels:
 - name: "org.jboss.product"
   value: "rhdm-controller"
 - name: "org.jboss.product.version"
-  value: "7.5.0"
+  value: "7.5.1"
 - name: "org.jboss.product.rhdm-controller.version"
-  value: "7.5.0"
+  value: "7.5.1"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhdm-controller"
 - name: "RHDM_CONTROLLER_VERSION"
-  value: "7.5.0"
+  value: "7.5.1"
 - name: "PRODUCT_VERSION"
-  value: "7.5.0"
+  value: "7.5.1"
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   value: "add_ons_distribution.zip"
 - name: "CONTROLLER_DISTRIBUTION_ZIP"
-  value: "rhdm-7.5.0-controller-ee7.zip"
+  value: "rhdm-7.5.1-controller-ee7.zip"
 artifacts:
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   target: "add_ons_distribution.zip"
-  # rhdm-7.5.0-add-ons.zip
-  md5: "d977ec05b2318548441505081fcb3314"
+  # rhdm-7.5.1-add-ons.zip
+  md5: "939e8f8691ef347edc2d1532af9a0047"
 run:
   user: 185
   cmd:

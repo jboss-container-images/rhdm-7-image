@@ -12,44 +12,46 @@ rhdm-7-decisioncentral cekit module:
 
 
 ```yaml
+---
 schema_version: 1
-
 name: "rhdm-7-decisioncentral"
+version: "1.0"
 description: "Red Hat Decision Manager Central 7.5 install"
 labels:
-    - name: "org.jboss.product"
-      value: "rhdm-decisioncentral"
-    - name: "org.jboss.product.version"
-      value: "7.5.0"
-    - name: "org.jboss.product.rhdm-decisioncentral.version"
-      value: "7.5.0"
+- name: "org.jboss.product"
+  value: "rhdm-decisioncentral"
+- name: "org.jboss.product.version"
+  value: "7.5.1"
+- name: "org.jboss.product.rhdm-decisioncentral.version"
+  value: "7.5.1"
 envs:
-    - name: "JBOSS_PRODUCT"
-      value: "rhdm-decisioncentral"
-    - name: "RHDM_DECISION_CENTRAL_VERSION"
-      value: "7.5.0"
-    - name: "PRODUCT_VERSION"
-      value: "7.5.0"
-    - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
-      value: "DECISION_CENTRAL_DISTRIBUTION.ZIP"
-    - name: "DECISION_CENTRAL_DISTRIBUTION_EAP"
-      value: "jboss-eap-7.2"
+- name: "JBOSS_PRODUCT"
+  value: "rhdm-decisioncentral"
+- name: "RHDM_DECISION_CENTRAL_VERSION"
+  value: "7.5.1"
+- name: "PRODUCT_VERSION"
+  value: "7.5.1"
+- name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
+  value: "decision_central_distribution.zip"
+- name: "DECISION_CENTRAL_DISTRIBUTION_EAP"
+  value: "jboss-eap-7.2"
 ports:
-    - value: 8001
+- value: 8001
 artifacts:
-    - name: DECISION_CENTRAL_DISTRIBUTION.ZIP
-      path: rhdm-7.5.0.DM-redhat-20190312-decision-central-eap7-deployable.zip
-      md5: 29e590113bf13f9c7c690473b523e444
+- name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
+  target: "decision_central_distribution.zip"
+  # rhdm-7.5.1-decision-central-eap7-deployable.zip
+  md5: "d3d46a38ef10006fa6f817c8ca11628b"
 run:
-      user: 185
-      cmd:
-          - "/opt/eap/bin/standalone.sh"
-          - "-b"
-          - "0.0.0.0"
-          - "-c"
-          - "standalone.xml"
+  user: 185
+  cmd:
+  - "/opt/eap/bin/standalone.sh"
+  - "-b"
+  - "0.0.0.0"
+  - "-c"
+  - "standalone.xml"
 execute:
-    - script: install
+- script: "install"
 ```
 
 In the file above we set the most important configurations to which defines:
