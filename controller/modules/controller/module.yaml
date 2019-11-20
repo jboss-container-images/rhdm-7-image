@@ -24,8 +24,8 @@ envs:
 artifacts:
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   target: "add_ons_distribution.zip"
-  # rhdm-7.6.0.DM-redhat-20191118-add-ons.zip
-  md5: "1673fc2e7363aa47896e73df195f2414"
+  # rhdm-7.6.0.DM-redhat-20191119-add-ons.zip
+  md5: "d0d9f7627ecfc81c1a39a04a7ffdf94a"
 run:
   user: 185
   cmd:
