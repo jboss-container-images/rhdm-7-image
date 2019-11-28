@@ -20,12 +20,12 @@ envs:
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   value: "add_ons_distribution.zip"
 - name: "CONTROLLER_DISTRIBUTION_ZIP"
-  value: "rhdm-7.6.0-controller-ee7.zip"
+  value: "rhdm-7.7.0-controller-ee7.zip"
 artifacts:
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   target: "add_ons_distribution.zip"
-  # rhdm-7.6.0.DM-redhat-20191124-add-ons.zip
-  md5: "58ad65917b7df80579d21def1e4f3650"
+  # rhdm-7.7.0.DM-redhat-20191126-add-ons.zip
+  md5: "2e80d67e0ad2f491f6e8e2d5d284730b"
 run:
   user: 185
   cmd:
