@@ -23,11 +23,11 @@ artifacts:
 - name: "KIE_SERVER_DISTRIBUTION_ZIP"
   target: "kie_server_distribution.zip"
   # rhdm-7.6.0-kie-server-ee8.zip
-  md5: "0bc1e7ea3fb1e629d3f392e5ead206b7"
+  md5: "513d0683c5f65984dccb7e591e9c8b84"
 - name: "slf4j-simple.jar"
   target: "slf4j-simple.jar"
   # slf4j-simple-1.7.22.redhat-2.jar
-  md5: "513d0683c5f65984dccb7e591e9c8b84"
+  md5: "62cc6eeb72e2738e3acc8957ca95f37b"
 run:
   user: 185
   cmd:
