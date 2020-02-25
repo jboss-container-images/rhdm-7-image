@@ -15,21 +15,21 @@ rhdm-7-decisioncentral cekit module:
 schema_version: 1
 
 name: "rhdm-7-decisioncentral"
-description: "Red Hat Decision Manager Central 7.7 install"
+description: "Red Hat Decision Manager Central 7.8 install"
 labels:
     - name: "org.jboss.product"
       value: "rhdm-decisioncentral"
     - name: "org.jboss.product.version"
-      value: "7.7.0"
+      value: "7.8.0"
     - name: "org.jboss.product.rhdm-decisioncentral.version"
-      value: "7.7.0"
+      value: "7.8.0"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhdm-decisioncentral"
     - name: "RHDM_DECISION_CENTRAL_VERSION"
-      value: "7.7.0"
+      value: "7.8.0"
     - name: "PRODUCT_VERSION"
-      value: "7.7.0"
+      value: "7.8.0"
     - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
       value: "DECISION_CENTRAL_DISTRIBUTION.ZIP"
     - name: "DECISION_CENTRAL_DISTRIBUTION_EAP"
@@ -38,7 +38,7 @@ ports:
     - value: 8001
 artifacts:
     - name: DECISION_CENTRAL_DISTRIBUTION.ZIP
-      path: rhdm-7.7.0.DM-redhat-20190312-decision-central-eap7-deployable.zip
+      path: rhdm-7.8.0.DM-redhat-20200224-decision-central-eap7-deployable.zip
       md5: 29e590113bf13f9c7c690473b523e444
 run:
       user: 185
