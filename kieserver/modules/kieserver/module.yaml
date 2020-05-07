@@ -7,23 +7,23 @@ labels:
 - name: "org.jboss.product"
   value: "rhdm-kieserver"
 - name: "org.jboss.product.version"
-  value: "7.7.0"
+  value: "7.7.1"
 - name: "org.jboss.product.rhdm-kieserver.version"
-  value: "7.7.0"
+  value: "7.7.1"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhdm-kieserver"
 - name: "RHDM_KIESERVER_VERSION"
-  value: "7.7.0"
+  value: "7.7.1"
 - name: "PRODUCT_VERSION"
-  value: "7.7.0"
+  value: "7.7.1"
 - name: "KIE_SERVER_DISTRIBUTION_ZIP"
   value: "kie_server_distribution.zip"
 artifacts:
 - name: "KIE_SERVER_DISTRIBUTION_ZIP"
   target: "kie_server_distribution.zip"
-  # rhdm-7.7.0-kie-server-ee8.zip
-  md5: "631b8748382ab84643730e64d0c6cca7"
+  # rhdm-7.7.1-kie-server-ee8.zip
+  md5: "776bdb7fb3a347b5dfaeaef3ce5fe3d2"
 - name: "slf4j-simple.jar"
   target: "slf4j-simple.jar"
   # slf4j-simple-1.7.22.redhat-2.jar
