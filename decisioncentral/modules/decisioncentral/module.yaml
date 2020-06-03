@@ -20,7 +20,7 @@ envs:
 - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
   value: "decision_central_distribution.zip"
 - name: "DECISION_CENTRAL_DISTRIBUTION_EAP"
-  value: "jboss-eap-7.2"
+  value: "jboss-eap-7.3"
 ports:
 - value: 8001
 artifacts:
