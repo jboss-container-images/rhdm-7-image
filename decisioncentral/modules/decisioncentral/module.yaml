@@ -26,8 +26,8 @@ ports:
 artifacts:
 - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
   target: "decision_central_distribution.zip"
-  # rhdm-7.9.0.redhat-20200811-decision-central-eap7-deployable.zip
-  md5: "9515aafc1e6ca7080bef1236a111901d"
+  # rhdm-7.9.0.redhat-20200812-decision-central-eap7-deployable.zip
+  md5: "e4e93bd0bc57f5a9ddf64d0604ee943d"
 run:
   user: 185
   cmd:
