@@ -2,27 +2,27 @@
 schema_version: 1
 name: "rhdm-7-kieserver"
 version: "1.0"
-description: "Red Hat Decision Manager KIE Server 7.9 install"
+description: "Red Hat Decision Manager KIE Server 7.10 installer"
 labels:
 - name: "org.jboss.product"
   value: "rhdm-kieserver"
 - name: "org.jboss.product.version"
-  value: "7.9.0"
+  value: "7.10.0"
 - name: "org.jboss.product.rhdm-kieserver.version"
-  value: "7.9.0"
+  value: "7.10.0"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhdm-kieserver"
 - name: "RHDM_KIESERVER_VERSION"
-  value: "7.9.0"
+  value: "7.10.0"
 - name: "PRODUCT_VERSION"
-  value: "7.9.0"
+  value: "7.10.0"
 - name: "KIE_SERVER_DISTRIBUTION_ZIP"
   value: "kie_server_distribution.zip"
 artifacts:
 - name: "KIE_SERVER_DISTRIBUTION_ZIP"
   target: "kie_server_distribution.zip"
-  # rhdm-7.9.0.redhat-20201008-kie-server-ee8.zip
+  # rhdm-7.10.0.redhat-20201008-kie-server-ee8.zip
   md5: "364277bd0146ac86989522c14ec2e1da"
 - name: "slf4j-simple.jar"
   target: "slf4j-simple.jar"
