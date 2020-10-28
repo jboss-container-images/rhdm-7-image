@@ -27,7 +27,7 @@ artifacts:
 - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
   target: "decision_central_distribution.zip"
   # rhdm-7.9.0-decision-central-eap7-deployable.zip
-  md5: "359613f3bdb86451da250180360dd0af"
+  md5: "eb58fd9ba4e29c5167851f457e0509a5"
 run:
   user: 185
   cmd:
