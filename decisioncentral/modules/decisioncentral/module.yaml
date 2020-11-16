@@ -18,14 +18,13 @@ envs:
 - name: "PRODUCT_VERSION"
   value: "7.10.0"
 - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
-  value: "decision_central_distribution.zip"
+  value: "rhdm_decision_central_distribution.zip"
 - name: "DECISION_CENTRAL_DISTRIBUTION_EAP"
   value: "jboss-eap-7.3"
 ports:
 - value: 8001
 artifacts:
-- name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
-  target: "decision_central_distribution.zip"
+- name: "rhdm_decision_central_distribution.zip"
   # rhdm-7.10.0.redhat-20201111-decision-central-eap7-deployable.zip
   md5: "578c6912d07d066ee59244b3ecbf0f1e"
 run:

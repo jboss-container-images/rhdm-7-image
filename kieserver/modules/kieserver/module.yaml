@@ -18,14 +18,12 @@ envs:
 - name: "PRODUCT_VERSION"
   value: "7.10.0"
 - name: "KIE_SERVER_DISTRIBUTION_ZIP"
-  value: "kie_server_distribution.zip"
+  value: "rhdm_kie_server_distribution.zip"
 artifacts:
-- name: "KIE_SERVER_DISTRIBUTION_ZIP"
-  target: "kie_server_distribution.zip"
+- name: "rhdm_kie_server_distribution.zip"
   # rhdm-7.10.0.redhat-20201111-kie-server-ee8.zip
   md5: "a423ec43ada272547c1f9adbc7252dec"
 - name: "slf4j-simple.jar"
-  target: "slf4j-simple.jar"
   # slf4j-simple-1.7.22.redhat-2.jar
   md5: "62cc6eeb72e2738e3acc8957ca95f37b"
 run:
