@@ -18,12 +18,11 @@ envs:
 - name: "PRODUCT_VERSION"
   value: "7.9.0"
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
-  value: "add_ons_distribution.zip"
+  value: "rhdm_add_ons_distribution.zip"
 - name: "CONTROLLER_DISTRIBUTION_ZIP"
   value: "rhdm-7.9.0-controller-ee7.zip"
 artifacts:
-- name: "ADD_ONS_DISTRIBUTION_ZIP"
-  target: "add_ons_distribution.zip"
+- name: "rhdm_add_ons_distribution.zip"
   # rhdm-7.9.0-add-ons.zip
   md5: "3587caf8b4a2cfa2a829beecb4de5689"
 run:
