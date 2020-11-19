@@ -32,7 +32,7 @@ envs:
 - name: "PRODUCT_VERSION"
   value: "7.10.0"
 - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
-  value: "rhdm-decision_central_distribution.zip"
+  value: "rhdm_decision_central_distribution.zip"
 - name: "DECISION_CENTRAL_DISTRIBUTION_EAP"
   value: "jboss-eap-7.2"
 ports:
