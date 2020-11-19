@@ -38,7 +38,7 @@ envs:
 ports:
 - value: 8001
 artifacts:
-- name: "rhdm-decision_central_distribution.zip"
+- name: "rhdm_decision_central_distribution.zip"
   # rhdm-7.10.0.redhat-20200224-decision-central-eap7-deployable.zip
   md5: "759fc7de8cdc5f366e90bdd10c66346e"
 run:
