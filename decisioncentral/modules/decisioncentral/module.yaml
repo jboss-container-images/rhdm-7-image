@@ -25,8 +25,8 @@ ports:
 - value: 8001
 artifacts:
 - name: "rhdm_decision_central_distribution.zip"
-  # rhdm-7.10.0.redhat-20201129-decision-central-eap7-deployable.zip
-  md5: "207e2aca7c71256038ad3686281d4349"
+  # rhdm-7.10.0.redhat-20201130-decision-central-eap7-deployable.zip
+  md5: "5a95d58935f92ca7ff2667dc87e2c35d"
 run:
   user: 185
   cmd:
