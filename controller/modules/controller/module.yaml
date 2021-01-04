@@ -23,8 +23,8 @@ envs:
   value: "rhdm-7.10.0-controller-ee7.zip"
 artifacts:
 - name: "rhdm_add_ons_distribution.zip"
-  # rhdm-7.10.0.redhat-20201214-add-ons.zip
-  md5: "f69a09b46d53cbf37025699747aa5708"
+  # rhdm-7.10.0.redhat-20201231-add-ons.zip
+  md5: "e66f1dea14c1012472432328d602adca"
 run:
   user: 185
   cmd:
