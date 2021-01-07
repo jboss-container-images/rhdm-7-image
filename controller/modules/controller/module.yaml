@@ -2,29 +2,29 @@
 schema_version: 1
 name: "rhdm-7-controller"
 version: "1.0"
-description: "Red Hat Decision Manager Standalone Controller 7.9 install"
+description: "Red Hat Decision Manager Standalone Controller 7.10 installer"
 labels:
 - name: "org.jboss.product"
   value: "rhdm-controller"
 - name: "org.jboss.product.version"
-  value: "7.9.1"
+  value: "7.10.0"
 - name: "org.jboss.product.rhdm-controller.version"
-  value: "7.9.1"
+  value: "7.10.0"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhdm-controller"
 - name: "RHDM_CONTROLLER_VERSION"
-  value: "7.9.1"
+  value: "7.10.0"
 - name: "PRODUCT_VERSION"
-  value: "7.9.1"
+  value: "7.10.0"
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   value: "rhdm_add_ons_distribution.zip"
 - name: "CONTROLLER_DISTRIBUTION_ZIP"
-  value: "rhdm-7.9.1-controller-ee7.zip"
+  value: "rhdm-7.10.0-controller-ee7.zip"
 artifacts:
 - name: "rhdm_add_ons_distribution.zip"
   # rhdm-7.9.1-add-ons.zip
-  md5: "51163a48e65dd02e4760b1afe1f5a805"
+  md5: "02cfb4421627cef8997d41c4f639aaf5"
 run:
   user: 185
   cmd:
