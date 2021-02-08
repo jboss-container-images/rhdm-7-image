@@ -24,7 +24,7 @@ envs:
 artifacts:
 - name: "rhdm_add_ons_distribution.zip"
   # rhdm-7.10.0-add-ons.zip
-  md5: "ab4580f7b0b64572cd9daf29393762bf"
+  md5: "228d09357f70a91fb98c1c77f72b253b"
 run:
   user: 185
   cmd:
