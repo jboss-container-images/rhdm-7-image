@@ -23,7 +23,7 @@ envs:
 artifacts:
 - name: "rhdm_add_ons_distribution.zip"
   # rhdm-7.11.0.redhat-20210113-add-ons.zip
-  md5: "dd314ba6017472380d2eab043a41a3c6"
+  md5: "f054694abd3f563f063631f042a433aa"
 run:
   user: 185
   cmd:
