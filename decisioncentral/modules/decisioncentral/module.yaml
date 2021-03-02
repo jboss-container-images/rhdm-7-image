@@ -1,3 +1,4 @@
+---
 schema_version: 1
 name: "rhdm-7-decisioncentral"
 version: "1.0"
@@ -24,8 +25,8 @@ ports:
 - value: 8001
 artifacts:
 - name: "rhdm_decision_central_distribution.zip"
-  # rhdm-7.11.0.redhat-20210113-decision-central-eap7-deployable.zip
-  md5: "1ffdc9b7bf30d44b8ce61edfa8fd3ca9"
+  # rhdm-7.11.0.redhat-210302-decision-central-eap7-deployable.zip
+  md5: "bdcda71fe6c842140b495a5dfafa6ef1"
 run:
   user: 185
   cmd:
