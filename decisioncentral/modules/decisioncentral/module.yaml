@@ -1,22 +1,21 @@
----
 schema_version: 1
 name: "rhdm-7-decisioncentral"
 version: "1.0"
-description: "Red Hat Decision Manager Central 7.11 installer"
+description: "Red Hat Decision Manager Central 7.12 installer"
 labels:
 - name: "org.jboss.product"
   value: "rhdm-decisioncentral"
 - name: "org.jboss.product.version"
-  value: "7.11.0"
+  value: "7.12.0"
 - name: "org.jboss.product.rhdm-decisioncentral.version"
-  value: "7.11.0"
+  value: "7.12.0"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhdm-decisioncentral"
 - name: "RHDM_DECISION_CENTRAL_VERSION"
-  value: "7.11.0"
+  value: "7.12.0"
 - name: "PRODUCT_VERSION"
-  value: "7.11.0"
+  value: "7.12.0"
 - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
   value: "rhdm_decision_central_distribution.zip"
 - name: "DECISION_CENTRAL_DISTRIBUTION_EAP"
@@ -25,7 +24,7 @@ ports:
 - value: 8001
 artifacts:
 - name: "rhdm_decision_central_distribution.zip"
-  # rhdm-7.11.0.redhat-210421-decision-central-eap7-deployable.zip
+  # rhdm-7.12.0.redhat-210419-decision-central-eap7-deployable.zip
   md5: "40128c555e9481bb0e4182d011a02745"
 run:
   user: 185

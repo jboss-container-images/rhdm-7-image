@@ -16,21 +16,21 @@ rhdm-7-decisioncentral cekit module:
 schema_version: 1
 name: "rhdm-7-decisioncentral"
 version: "1.0"
-description: "Red Hat Decision Manager Central 7.11 installer"
+description: "Red Hat Decision Manager Central 7.12 installer"
 labels:
 - name: "org.jboss.product"
   value: "rhdm-decisioncentral"
 - name: "org.jboss.product.version"
-  value: "7.11.0"
+  value: "7.12.0"
 - name: "org.jboss.product.rhdm-decisioncentral.version"
-  value: "7.11.0"
+  value: "7.12.0"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhdm-decisioncentral"
 - name: "RHDM_DECISION_CENTRAL_VERSION"
-  value: "7.11.0"
+  value: "7.12.0"
 - name: "PRODUCT_VERSION"
-  value: "7.11.0"
+  value: "7.12.0"
 - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
   value: "rhdm_decision_central_distribution.zip"
 - name: "DECISION_CENTRAL_DISTRIBUTION_EAP"
@@ -39,7 +39,7 @@ ports:
 - value: 8001
 artifacts:
 - name: "rhdm_decision_central_distribution.zip"
-  # rhdm-7.11.0.redhat-20200224-decision-central-eap7-deployable.zip
+  # rhdm-7.12.0.redhat-20200224-decision-central-eap7-deployable.zip
   md5: "759fc7de8cdc5f366e90bdd10c66346e"
 run:
   user: 185
@@ -74,6 +74,35 @@ file and its purpose, all the modules have the same files, as described below:
  - **branch-overrides.yaml**: overrides file which uses the latest stable version for external dependencies. The module.yaml and image.yaml always refer to master branch.
  - **tag-overrides.yaml**: Used to override the branchs to use the final tags to rebuild released images, for CVE respins.
  - **image.yaml**: the main image descriptor file, here are all the pieces and configuration needed to build an image. (Deprecated)
+
+
+### Update versions
+
+Before each release, there is a need to update the product version on each repository that composes the Container
+Images.
+In this repo you will find the **scripts** directory which containers the `update-version.py` script which helps to
+update the version to the next release interation smoothly. 
+
+This script requires python 3.
+
+
+See its usage:
+```bash
+$ python scripts/update-version.py --help
+usage: update-version.py [-h] [-v T_VERSION] [--confirm]
+
+RHDM Version Manager
+
+optional arguments:
+  -h, --help    show this help message and exit
+  -v T_VERSION  update everything to the next version
+  --confirm     if not set, script will not update the rhdm modules. (Dry run)
+```
+
+
+There is two options to run it, a dry-run option which will only print for you the changes, useful if you want just to see
+how the changes will looks like after the script is executed, and if the chages are correct, the `--confirm` flag
+should be used.
 
 
 ##### Found a issue?
