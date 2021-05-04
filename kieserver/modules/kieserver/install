@@ -14,6 +14,8 @@ cp -rf ${SOURCES_DIR}/${DISTRIBUTION_WAR_DIR} ${ROOT_WAR_DIR}
 touch ${ROOT_WAR_DIR}.dodeploy
 cp -rf ${SOURCES_DIR}/SecurityPolicy/* ${JBOSS_HOME}/bin/
 
+mv /tmp/artifacts/jbpm-event-emitters-kafka-7.x.Final.jar "/opt"
+
 chown -R jboss:root ${JBOSS_HOME}
 chmod 0755 ${JBOSS_HOME}
 chmod -R g+rwX ${JBOSS_HOME}
