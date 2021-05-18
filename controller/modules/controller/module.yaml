@@ -1,3 +1,4 @@
+---
 schema_version: 1
 name: "rhdm-7-controller"
 version: "1.0"
@@ -22,8 +23,8 @@ envs:
   value: "rhdm-7.12.0-controller-ee7.zip"
 artifacts:
 - name: "rhdm_add_ons_distribution.zip"
-  # rhdm-7.12.0.redhat-210419-add-ons.zip
-  md5: "79269d5bf8e40c6716250c6e1bf300ef"
+  # rhdm-7.12.0.redhat-210517-add-ons.zip
+  md5: "be798d9630a8a0214b992a8c4b4785e5"
 run:
   user: 185
   cmd:
