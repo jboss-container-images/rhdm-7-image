@@ -21,16 +21,16 @@ labels:
 - name: "org.jboss.product"
   value: "rhdm-decisioncentral"
 - name: "org.jboss.product.version"
-  value: "7.11.0"
+  value: "7.11.1"
 - name: "org.jboss.product.rhdm-decisioncentral.version"
-  value: "7.11.0"
+  value: "7.11.1"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhdm-decisioncentral"
 - name: "RHDM_DECISION_CENTRAL_VERSION"
-  value: "7.11.0"
+  value: "7.11.1"
 - name: "PRODUCT_VERSION"
-  value: "7.11.0"
+  value: "7.11.1"
 - name: "DECISION_CENTRAL_DISTRIBUTION_ZIP"
   value: "rhdm_decision_central_distribution.zip"
 - name: "DECISION_CENTRAL_DISTRIBUTION_EAP"
@@ -39,7 +39,7 @@ ports:
 - value: 8001
 artifacts:
 - name: "rhdm_decision_central_distribution.zip"
-  # rhdm-7.11.0.redhat-20200224-decision-central-eap7-deployable.zip
+  # rhdm-7.11.1.redhat-20200224-decision-central-eap7-deployable.zip
   md5: "759fc7de8cdc5f366e90bdd10c66346e"
 run:
   user: 185
@@ -60,7 +60,7 @@ In the file above we set the most important configurations to which defines:
 
 Note the *DECISION_CENTRAL_DISTRIBUTION.ZIP* env, its value will be the artifact name that, when the build is completed,
 is placed in the `/<images_source_dir>/rhdm-7-openshift-image/businesscentral/target/image` directory,
-note that it is on the rhdm-7-openshift-image repository. The **module.yaml** file above is a example of
+note that it is on the rhdm-7-openshift-image repository. The **module.yaml** file above is an example of
 the base module used to configure the product bits into the final OpenShift image. All OpenShift images have a
 similar module descriptor, and these modules (the base modules) are one of the first module listed in
 the *-openshift image’s image.yaml file.
