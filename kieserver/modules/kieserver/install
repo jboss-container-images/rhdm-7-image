@@ -12,9 +12,10 @@ unzip -q ${SOURCES_DIR}/${DISTRIBUTION_ZIP} -d ${SOURCES_DIR}
 ROOT_WAR_DIR=${JBOSS_HOME}/standalone/deployments/ROOT.war
 cp -rf ${SOURCES_DIR}/${DISTRIBUTION_WAR_DIR} ${ROOT_WAR_DIR}
 touch ${ROOT_WAR_DIR}.dodeploy
+chown jboss:root ${ROOT_WAR_DIR}.dodeploy
 cp -rf ${SOURCES_DIR}/SecurityPolicy/* ${JBOSS_HOME}/bin/
 
-chown -R jboss:root ${JBOSS_HOME}
-chmod 0755 ${JBOSS_HOME}
-chmod -R g+rwX ${JBOSS_HOME}
+chown -R jboss:root ${JBOSS_HOME}/bin
+chmod 0755 ${JBOSS_HOME}/bin
+chmod -R g+rwX ${JBOSS_HOME}/bin
 
