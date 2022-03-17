@@ -1,3 +1,4 @@
+---
 schema_version: 1
 name: "rhdm-7-kieserver"
 version: "1.0"
@@ -21,7 +22,7 @@ envs:
 artifacts:
 - name: "rhdm_kie_server_distribution.zip"
   # rhdm-7.12.1-kie-server-ee8.zip
-  md5: "be140370b22ad36f0cb00a0a4950416d"
+  md5: "87595844543acd8d2af38a6d41cb39f0"
 - name: "slf4j-simple.jar"
   # slf4j-simple-1.7.22.redhat-2.jar
   md5: "62cc6eeb72e2738e3acc8957ca95f37b"
